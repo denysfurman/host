@@ -1,0 +1,124 @@
+// --------------------------------- --------- step 2
+
+.step_2
+	display: inline-block
+	width: 100%
+	background-color: #f8f8f8
+	padding: 40px 0
+	margin-bottom: -7px
+	.descript
+		padding: 0 90px
+		margin-bottom: 36px
+		text-align: center
+
+
+.graph_item
+	display: inline-block
+	width: 100%
+	position: relative
+	.graph_item_name
+		display: inline-block
+		float: left
+		width: 200px
+		padding-right: 25px
+		font-size: 15px
+		text-align: right
+		margin: 0
+		margin-bottom: 12px
+	.graph_item_line
+		width: calc(100% - 200px)
+		float: left
+		display: inline-block
+		position: relative
+		height: 5px
+		background-color: gainsboro
+		border-radius: 10px
+		margin-top: 12px
+		.graph_item_line_toch
+			position: absolute
+			width: 17px
+			height: 17px
+			background-color: #9fd250
+			border-radius: 50%
+			display: inline-block
+			top: -6px
+			transition: all 0.5s ease
+
+		  
+
+.graph_item 
+
+	.graph_item_line_toch
+		animation-duration: 1s
+		&.green
+			background: #4fba40
+		&.dark_green	
+			background: #12a54a
+		
+
+	&:nth-child(2)	
+		.graph_item_line_toch
+			animation-duration: 2s
+		
+	&:nth-child(3)	
+		.graph_item_line_toch
+			animation-duration: 2.5s
+	&:nth-child(4)	
+		.graph_item_line_toch
+			animation-duration: 3s
+		
+	&:nth-child(5)	
+		.graph_item_line_toch
+			animation-duration: 3s	
+	&:nth-child(6)	
+		.graph_item_line_toch
+			animation-duration: 3s	
+	&:nth-child(7)	
+		.graph_item_line_toch
+			animation-duration: 3s	
+	&:nth-child(8)	
+		.graph_item_line_toch
+			animation-duration: 3s		
+
+	&:nth-child(9)	
+		.graph_item_line_toch
+			animation-duration: 3s				
+
+
+
+
+@keyframes slideInLeft
+
+	0% 
+    
+    left: 0
+	100% 
+    
+    transform: translateX(0)
+	
+
+
+.graph_top_line
+	width: 100%
+	padding-left: 200px
+	li
+		width: 33.33%
+		display: inline-block
+		float: left
+		padding-top: 20px
+		border-top: 5px solid #9fd250
+		margin-bottom: 19px
+		text-align: left
+		&:nth-child(2)
+			border-top: 5px solid #4fba40
+			text-align: center
+		&:nth-child(3)
+			border-top: 5px solid #12a54a
+			text-align: right	
+		p.graph_top_line_title
+			margin: 0
+			font-size: 19px
+			margin-bottom: 0px
+			color: #000
+		span
+			font-size: 15px
