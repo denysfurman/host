@@ -5,6 +5,7 @@
 	background-position: right
 	background-repeat: no-repeat
 	padding: 50px 0
+	
 
 .slider_wr
 	max-width: 904px
@@ -30,4 +31,44 @@
 			text-align: center
 		a.button_green
 			display: table
-			margin: 20px auto		
+			margin: 20px auto	30px	
+
+	.owl-dots
+		display: table
+		margin: 0 auto
+		.owl-dot
+			display: inline-block
+			float: left
+			margin-right: 12px 
+			width: 10px
+			height: 10px
+			border-radius: 50%
+			border: 1px solid #555
+			background-color: #fff
+			&:last-child
+				margin-right: 0	
+			&.active
+				background-color: #555	
+	.owl-nav
+		position: relative
+		width: 1px
+		display: table
+		margin: 0 auto
+
+	.owl-prev
+		position: absolute
+		left: -20px
+		color: #999
+		left: -55px
+		top: -11px	
+		&:hover
+			color: #000
+	.owl-next
+		position: absolute
+		right: -20px
+		color: #999
+		top: -11px	
+		right: -55px
+		&:hover
+			color: #000
+
