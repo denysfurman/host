@@ -17,6 +17,18 @@ $(function() {
         ]
         
 	  
-	});	  
+	});	
+
+
+	$('.language-select').click(function(){
+	  $(this).toggleClass('open');
+	})
+
+	$('.language-select li').click(function(){    
+	  $('ul li').removeClass('active');
+	  $(this).toggleClass('active');
+	})
 
 });
+
+

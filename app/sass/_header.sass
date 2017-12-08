@@ -1,0 +1,122 @@
+.header_topline
+	height: 44px
+	border-bottom: 1px solid #e8e8e8
+	width: 100%
+	.header_topline_phone
+		display: inline-block
+		float: left
+		a
+			font-size: 12px
+			line-height: 44px
+			color: #555
+
+
+.header_topline_right
+	display: inline-block
+	float: right
+	position: relative
+	.header_topline_menu
+		float: left
+		display: inline-block
+		margin-top: 13px
+		li
+			float: left
+			display: inline-block
+			margin-right: 10px
+			padding-right: 10px
+			border-right: 1px solid #555
+			line-height: 13px
+			&:last-child
+				margin: 0
+				padding: 0
+				border: none
+			a
+				font-size: 12px
+				color: #555
+
+
+	.search_link
+		
+    margin-top: 5px
+    display: inline-block
+    margin-left: 15px		
+    position: relative
+    top: 2px
+
+
+.header_main
+	display: inline-block
+	width: 100%
+	height: 65px
+	background-color:: #fff
+	margin-bottom: -6px
+	.header_logo
+		display: inline-block
+		float: left
+		line-height: 65px
+	.main_menu
+		display: inline-block
+		float: right
+		li
+			display: inline-block
+			float: left
+			a	
+				line-height: 66px
+				color: #363636
+				font-size: 15px
+				display: inline-block
+				padding: 0 15px
+				&:hover
+					background-color: #ededed
+
+
+.language-select
+	height: 16px
+	margin: 0px
+	flex-direction: column
+	display: inline-flex
+	overflow: hidden
+	position: absolute
+	right: 0
+	top: -10px
+
+
+  
+  
+	li
+	  text-align: center
+	  flex: 1
+	  display: flex
+	  flex-direction: column
+	  justify-content: center
+	  background: #fff
+	  order: 2
+	  margin-bottom: 3px
+	  min-height: 15px
+	  &:hover
+	    cursor: pointer
+	 
+	  & .active
+	    order: 1
+	    pointer-events: none	
+
+
+
+.language-select.open
+	height: auto
+
+.language-select-wr
+	width: 40px
+	position: relative	
+	display: inline-block
+	&:after
+		content: ""
+		width: 8px
+		height: 5px
+		display: inline-block
+		background-image: url(../img/arr.png)
+		position: absolute
+		right: -10px
+		top: -5px
+
+  
